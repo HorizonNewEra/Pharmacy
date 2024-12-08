@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز صيانه الأجهزه الطبيه</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">My Website</div>
+            <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');
+            }
+        </script>
+    </nav>
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Carousel</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .carousel img {
+                object-fit: cover;
+                width: 100%;
+                height: 400px; /* يمكنك ضبط هذا الارتفاع حسب رغبتك */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/download (20).jpeg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/download (21).jpeg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images (22).jpeg" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images (23).jpeg" class="d-block w-100" alt="Image 4">
+                    </div>
+                </div>
+                <!-- Indicators -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // اجعل الصور تتغير تلقائيًا كل ثانيتين
+            const carousel = document.querySelector('#carouselExample');
+            const carouselInstance = new bootstrap.Carousel(carousel, {
+                interval: 4000, // مدة الانتقال بين الصور بالميلي ثانية (2000 = 2 ثانية)
+                ride: 'carousel' // تشغيل تلقائي
+            });
+        </script>
+    
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your Partner in Medical Technology</h2>
+            <p>Leading the way with cutting-edge medical devices designed to improve lives.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a global leader in medical technology, providing innovative solutions for healthcare professionals
+                and patients worldwide.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/download (3).jpeg" alt="Product 1">
+                    <h3>Product Name 1</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/download (4).jpeg" alt="Product 2">
+                    <h3>Product Name 2</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/download (5).jpeg" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/download (6).jpeg" alt="Product 3">
+                    <h3>جهاز الصونار </h3>
+                    <p>السونار او الموجات فوق الصوتية ultrasound يقصد به طبيا استخدام الاجهزة التي تعتمد على الموجات فوق الصوتية لرؤية تفاصيل اعضاء الجسم الداخلية. . فهو يستخدم في تشخيص ومتابعة الحمل وايضا تشخيص امراض البطن والحوض .. كما يستخدم بتقنيات معدلة لفحص الاوعية الدموية بالجسم ومشاهدة حالة القلب وغرفه والشرايين التاجية</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/download.jpeg" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/images.jpeg" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/images (1).jpeg" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Description of the product.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/images (2).jpeg" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Description of the product.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery">
+        <img src="images/5 (1).jpg" alt="Medical Equipment" onclick="openLightbox(this)">
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script>
+        function openLightbox(image) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = image.src;
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+
+   <!-- Footer -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <h3>تواصل معنا</h3>
+                <p>غرب أرابيلا – فيلا 169 – القاهرة الجديدة<br>التجمع الخامس</p>
+                <p><strong>الهاتف:</strong> 01027220807</p>
+                <p><strong>البريد الإلكتروني:</strong> info@lifetimeeg.com</p>
+            </div>
+            <div class="footer-section about">
+                <img src="images/لوجو الصفحهpng.png" alt="Lifetime Logo">
+                <p>
+                    نركز دائماً في إنشاء المواقع لتصبح شركتك من ضمن الشركات المناسبة لمجالك.
+                    نستهدف دائماً التطوير والإبداع في التصميم.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""> <i class="fa-solid fa-location-dot"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 horizon.com</p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
